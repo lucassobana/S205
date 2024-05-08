@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #00c3ff;
+    padding: 0 20px;
+}
+
+body{
+    background-color: #00c3ff;
+}
+
+#perfil{
+    padding-left: 10px;
+}
+
+#perfil img{
+    width: 50px;
+    height: 50px;
+}
+
+#name{
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+#config{
+    padding-right: 20px;
+}
+
+#config img{
+    width: 50px;
+    height: 50px;
+}
+
+#importante{
+    align-items: center;
+    background-color: yellow;
+    height: 60px;
+}
+
+#notificacao{
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#notificacao img{
+    width: 40px;
+    height: 40px;
+}
+
+#plus{
+    align-items: end;
+    width: 40px;
+    height: 40px;
+}
+
+.identificacao{
+    align-items: center;
+    height: 45px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.horario, .predio, .notas{
+    align-items: center;
+    text-align: center;
+    box-shadow: none;
+    padding-top: 20px;
+}
+
+#clock{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+
+}
+
+#clock img{
+    width: 30px;
+    height: 30px;
+}
+
+#frequencia{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#frequencia img{
+    width: 30px;
+    height: 30px;
+}
+
+#build{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#build img{
+    width: 30px;
+    height: 30px;
+}
