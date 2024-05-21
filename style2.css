@@ -32,3 +32,8 @@ body{
     font-weight: bolder;
     font-size: large;
 }
+
+.photo{
+    width: 70px;
+    height: 70px;
+}
