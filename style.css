@@ -16,9 +16,21 @@ header{
 body{
     background-color: #00c3ff;
 }
+#main-header{
+    display: flex;;
+    align-items: center;
+    height: 80px;
+    justify-content: center;
+
+}
 
 #perfil{
+    display: flex;
     padding-left: 10px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
 }
 
 #perfil img{
@@ -30,10 +42,23 @@ body{
     color: white;
     font-weight: bold;
     font-size: large;
+    justify-content: center;
+    display: flex;
+}
+button#config{
+    position: fixed;
+    right: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1000; 
 }
 
 #config{
     padding-right: 20px;
+    background-color: #00c3ff;
+    align-items: center;
 }
 
 #config img{
@@ -112,4 +137,86 @@ body{
 #build img{
     width: 30px;
     height: 30px;
+}
+
+.friends{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    color: #fefefe;
+    font-size: larger;
+}
+.friends:hover{
+    text-transform: uppercase;
+    color: red;
+}
+
+body.light-theme {
+    background-color: #00c3ff;
+    color: black;
+}
+
+body.dark-theme {
+    background-color: #2c4e58;
+    color: black;
+}
+
+header.light-theme {
+    background-color: #00c3ff;
+    color: black;
+}
+
+header.dark-theme {
+    background-color: #2c4e58;
+    color: white;
+}
+#importante.light-theme {
+    background-color: yellow;
+    color: black;
+}
+
+#importante.dark-theme {
+    background-color: rgb(150, 150, 76);
+    color: white;
+}
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    margin-top: 20px;
 }
