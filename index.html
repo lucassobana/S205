@@ -11,9 +11,9 @@
 
 <body>
     <div id="main-header">
-        <div id="perfil">
+        <button id="perfil">
             <img src="images/perfil.png" alt="perfil">
-        </div>
+        </button>
         <div id="name">Olá Lucas Sawada Obana</div>
         <button id="config">
             <img src="images/config.png" alt="config">
@@ -55,6 +55,23 @@
     </div>
 
     <a href="tela2.html" class="friends">Amigos</a>
+
+    <div id="login-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <button id="clear-login">Limpar Login</button>
+        </div>
+    </div>
+    
+    
 
 
     <script src="telas/app.js"></script>

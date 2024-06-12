@@ -23,7 +23,15 @@ body{
     justify-content: center;
 
 }
-
+button#perfil{
+    position: fixed;
+    right: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1000; 
+}
 #perfil{
     display: flex;
     padding-left: 10px;
@@ -220,3 +228,132 @@ header.dark-theme {
 button {
     margin-top: 20px;
 }
+
+
+/* Estilos para o popup de login */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    text-align: center;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilização do fundo do popup */
+#login-popup {
+    display: none; /* Ocultar por padrão */
+    position: fixed; /* Fixo na tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ficar acima de outros elementos */
+}
+
+/* Estilização do conteúdo do popup */
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Animação de entrada suave */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilização do botão de fechar */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #aaa;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #000;
+}
+
+/* Estilização do formulário */
+#login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilização dos labels */
+#login-form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+/* Estilização dos inputs */
+#login-form input[type="text"],
+#login-form input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Estilização do botão de submit */
+#login-form button {
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#login-form button:hover {
+    background: #0056b3;
+}
+
